@@ -2,18 +2,33 @@
 
 ## pythonをインストールする
 
-
-yum install gcc zlib-devel bzip2 bzip2-devel readline readline-devel sqlite sqlite-devel openssl openssl-devel git
-
-pythonをインストールするのに必要となるモジュール
-- gcc
-- zlib-devel
-- bzip2
-- bzip2-devel
-- readline
-- readline-devel
-- sqlite
-- sqlite-devel
-- openssl
-- openssl-devel
-- git
+```
+sudo git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+```
+```
+echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bash_profile
+```
+```
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+```
+```
+exec $SHELL -l
+```
+```
+pyenv --version
+```
+```
+pyenv install --list
+```
+```
+pyenv install 3.5.0
+```
+```
+python --version
+```
+```
+pip（rubyでいうところのGem的なもの）
+```
+```
+パッケージをインストールするときに使う
+```
